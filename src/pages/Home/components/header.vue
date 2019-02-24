@@ -5,9 +5,7 @@
 				<div class="iconfont back-icon">&#xe624;</div>
 			</div>
 			<div class="header-input">
-				<span class="iconfont">&#xe632;</span>
-				输入城市/景点/游玩主题
-			</div>
+				<span class="iconfont">&#xe632;</span>输入城市/景点/游玩主题</div>
 			<div class="header-right">
 				城市
 				<span class="iconfont arrow-icon">&#xe606;</span>
@@ -49,7 +47,6 @@ export default {
 		float: right
 		text-align: center
 		.arrow-icon
-			margin-left:-.04rem
-			font-size:.24rem
-
+			margin-left: -.04rem
+			font-size: .24rem
 </style>
