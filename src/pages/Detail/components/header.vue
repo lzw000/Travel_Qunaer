@@ -26,6 +26,7 @@ export default {
 	},
 	methods: {
 		handleScroll () {
+			console.log(scroll)
 			//console.log(document.documentElement.scrollTop)
 			const top = document.documentElement.scrollTop
 			if (top > 60) {
@@ -42,6 +43,9 @@ export default {
 	},
 	activated () {
 		window.addEventListener('scroll', this.handleScroll)
+	},
+	deactivated () {
+		window.removeEventListener('scroll', this.handleScroll)
 	}
 }
 </script>
