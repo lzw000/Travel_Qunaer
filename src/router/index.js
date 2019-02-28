@@ -19,5 +19,8 @@ export default new Router({
       path: '/Detail/:id',//动态路由
       name: 'Detail',
       component: Detail
-    }]
+    }],
+    scrollBehavior (to, from, savePosition) {
+    	return { x: 0, y: 0 }
+    }
 })
