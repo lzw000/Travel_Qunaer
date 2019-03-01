@@ -23,4 +23,22 @@ export default new Router({
     scrollBehavior (to, from, savePosition) {
     	return { x: 0, y: 0 }
     }
+    /*异步组件，app.js>1M时使用
+     routes: [{
+      path: '/',
+      name: 'Home',
+      component:  () => import('@/pages/Home/Home')
+    },{
+      path: '/City',
+      name: 'City',
+      component:   () => import('@/pages/City/City')
+    },{
+      path: '/Detail/:id',//动态路由
+      name: 'Detail',
+      component:   () => import('@/pages/Detail/Detail')
+    }],
+    scrollBehavior (to, from, savePosition) {
+    	return { x: 0, y: 0 }
+    }
+     * */
 })

@@ -19,7 +19,7 @@
 	export default {
 		name: 'Home',
 		components:{
-	  	HomeHeader,
+	  	HomeHeader,//也可以用异步组件
 	  	HomeSwiper,
 	  	HomeIcons,
 	  	HomeRecommend,
